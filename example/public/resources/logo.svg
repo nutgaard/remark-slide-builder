@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewport="0 0 1000 680" width="1000" height="680">
+    <style>
+        .box {
+            fill: none;
+            stroke: black;
+            stroke-width: 4px;
+        }
+        .box.dashed {
+            stroke-dasharray: 8;
+        }
+    </style>
+    
+    <rect x="10" y="10" rx="4" ry="4" width="980" height="660" class="box" />
+    <rect x="20" y="20" rx="4" ry="4" width="960" height="100" class="box" />
+    <rect x="20" y="130" rx="4" ry="4" width="260" height="530" class="box" />
+    <rect x="290" y="130" rx="4" ry="4" width="690" height="530" class="box" />
+    <rect x="300" y="140" rx="4" ry="4" width="670" height="100" class="box dashed" />
+    <rect x="300" y="250" rx="4" ry="4" width="670" height="100" class="box dashed" />
+</svg>

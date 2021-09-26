@@ -1,0 +1,14 @@
+{
+  "name": "remark-slide-builder-example",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "remark-builder dev",
+    "build": "remark-builder build"
+  },
+  "author": "Nicklas Utgaard",
+  "license": "MIT",
+  "devDependencies": {
+    "@nutgaard/remark-slide-builder": "0.0.1-beta.1"
+  }
+}

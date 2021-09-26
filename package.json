@@ -1,0 +1,36 @@
+{
+  "name": "@nutgaard/remark-slide-builder",
+  "version": "0.0.1-beta.01",
+  "description": "",
+  "main": "dist/remark-builder.js",
+  "bin": {
+    "remark-builder": "dist/remark-builder.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --outfile=dist/remark-builder.js --bundle --platform=node",
+    "dev": "chokidar './src/**/*.*' -c 'npm run build' --initial",
+    "commit": "git-cz"
+  },
+  "author": "Nicklas Utgaard",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "^16.9.6",
+    "@types/ws": "^7.4.7",
+    "chokidar-cli": "^3.0.0",
+    "esbuild": "^0.13.0",
+    "git-cz": "^4.7.6"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "memfs": "^3.3.0",
+    "mime-types": "^2.1.32",
+    "ws": "^8.2.2"
+  }
+}
