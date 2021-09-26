@@ -9,6 +9,6 @@
   "author": "Nicklas Utgaard",
   "license": "MIT",
   "devDependencies": {
-    "@nutgaard/remark-slide-builder": "0.0.1-beta.1"
+    "@nutgaard/remark-slide-builder": "0.0.1-beta.2"
   }
 }

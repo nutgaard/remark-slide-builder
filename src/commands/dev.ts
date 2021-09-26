@@ -75,11 +75,11 @@ class DevServer {
             } else {
                 let content = this.memfs.readFileSync(filepath);
                 if (filepath.endsWith("index.html")) {
-                    content = `${content}\n${tmpl(jsHotloadScript, {PORT: this.port})}`
+                    content = `${content.toString()}\n${tmpl(jsHotloadScript, {PORT: this.port})}`
                 }
                 res.writeHead(200, {
                     'Content-Type': mimetype,
-                    'Content-Length': content.length
+                    'Content-Length': Buffer.byteLength(content, 'utf8')
                 });
                 res.write(content);
                 res.end();
