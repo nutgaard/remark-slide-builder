@@ -11,6 +11,31 @@ function readArgs(args: string[]): Config {
         ...defaultConfig,
         command
     };
+    for (let i = 0; i < options.length; i += 2) {
+        const option = options[i];
+        const value = options[i + 1];
+        switch (option) {
+            case "--out":
+            case "-o": {
+                config.outDir = value;
+                break;
+            }
+            case "--source":
+            case "-s": {
+                config.slideSource = value;
+                break;
+            }
+            case "--public":
+            case "-p": {
+                config.publicDir = value;
+                break;
+            }
+            default: {
+                HelpCmd.run(defaultConfig);
+                console.log('option', option);
+            }
+        }
+    }
     return config;
 }
 
